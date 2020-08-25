@@ -1,0 +1,23 @@
+/*About(Sales Commission Calculator) One large chemical company pays its salespeople on a commission basis. The salespeople receive RS.
+200 per week plus 9% of their gross sales for that week. For example, a salesperson who sells RS. 5000 worth of chemicals in a week receives RS.
+200 plus 9% of RS. 5000, or a total of RS. 650. Write a program that will*/
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+       double sale, com, earn;
+       while (true)
+       {
+             cout<<"Enter Sales in PKR (-1 to end): ";
+             cin>>sale;
+             if(sale== -1)
+             {
+                   break;
+             }
+             com = sale / 100 * 9;
+             earn = com + 200;
+             cout<<"Salary is: RS "<<earn<<endl;
+       }
+}
